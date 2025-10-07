@@ -29,7 +29,11 @@ Execute the Streamlit command from the project root:
   streamlit run app.py
 
 🏗️ Code Structure Highlights:
+
 app.py	--- The main Streamlit script containing all interface logic and function calls.
+
 scrape_website(url)	--- Performs HTTP request, separates content into text and table components, and handles error checks.
+
 summarize_text(client, content)	--- Encapsulates the call to the Gemini API using a specific prompt for concise summarization.
+
 df.index = df.index + 1 ---	Critical line to adjust the pandas DataFrame index from 0-based to 1-based for human-readable table display.
